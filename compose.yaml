@@ -1,0 +1,10 @@
+services:
+  mysql:
+    image: 'mysql:latest'
+    environment:
+      - 'MYSQL_DATABASE=seacare'
+      - 'MYSQL_PASSWORD=seacare123'
+      - 'MYSQL_ROOT_PASSWORD=root'
+      - 'MYSQL_USER=seacaredev'
+    ports:
+      - '5536:3306'
